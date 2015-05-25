@@ -5,9 +5,9 @@
 	<title>Home</title>
 </head>
 <body>
-<%@include file="header.jsp" %>
+
 <h1>
-	Hello world!  
+	Hello world!
 </h1>
 
 <P>  The time on the server is ${serverTime}. </P>

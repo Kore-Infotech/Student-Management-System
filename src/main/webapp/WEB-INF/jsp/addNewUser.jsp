@@ -40,7 +40,7 @@
 				</tr>
 				<tr>
 					<td><input type="submit" value="Submit"/>
-						<input type="button" value="Cancel"/>
+						<input type="button" onClick="location.href='smslogin'" value="Cancel"/>
 					</td>
 					
 				</tr>
