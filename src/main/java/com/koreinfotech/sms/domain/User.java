@@ -23,7 +23,7 @@ public class User {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="USER_ID")
-	private Long userID;
+	private Long userId;
 	
 	@NotBlank
 	@Column(name="FIRST_NAME",nullable=false)
@@ -52,12 +52,12 @@ public class User {
 	@OneToMany(mappedBy="user",cascade=CascadeType.ALL)
 	private List<UserRole> userRoles = new ArrayList<UserRole>();
 
-	public Long getUserID() {
-		return userID;
+	public Long getUserId() {
+		return userId;
 	}
 
-	public void setUserID(Long userID) {
-		this.userID = userID;
+	public void setUserId(Long userId) {
+		this.userId = userId;
 	}
 
 	public String getFirstName() {
@@ -118,7 +118,7 @@ public class User {
 
 	@Override
 	public String toString() {
-		return "User [userID=" + userID + ", firstName=" + firstName
+		return "User [userID=" + userId + ", firstName=" + firstName
 				+ ", lastName=" + lastName + ", email=" + email + ", userName="
 				+ userName + ", password=" + password + ", enabled=" + enabled
 				+ "]";
